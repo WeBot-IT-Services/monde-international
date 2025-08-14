@@ -1,0 +1,24 @@
+{
+  "name": "monde-international-website",
+  "version": "1.0.0",
+  "description": "Monde International Sdn Bhd - Malaysia to China & Hong Kong Trade Specialists",
+  "scripts": {
+    "build": "echo 'Static site - no build step required'",
+    "dev": "npx serve public",
+    "start": "npx serve public"
+  },
+  "keywords": [
+    "logistics",
+    "malaysia",
+    "china",
+    "hong-kong",
+    "shipping",
+    "freight",
+    "trade"
+  ],
+  "author": "Monde International Sdn Bhd",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}

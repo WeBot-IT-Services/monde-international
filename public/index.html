@@ -1,0 +1,991 @@
+<!DOCT    <link rel="stylesheet" href="style.css?v=20250730002">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Company Logo & Branding -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-asia"></i>
+                </div>
+                <div class="logo-text">
+                    <h2>Monde International</h2>
+                    <span>Sdn Bhd</span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Menu (Hidden on Mobile) -->
+            <nav class="nav-tabs">
+                <a href="#home" class="nav-tab">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#services" class="nav-tab">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#machinery" class="nav-tab active">
+                    <i class="fas fa-cogs"></i>
+                    <span>Equipment</span>
+                </a>
+                <a href="#about" class="nav-tab">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#contact" class="nav-tab">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-split-container">
+            <!-- Left Side - Content -->
+            <div class="hero-left">
+                <div class="hero-badge" data-en="Malaysia ↔ China & Hong Kong Trade Specialists" data-zh="马中港贸易专家">
+                    <i class="fas fa-globe-asia"></i>
+                    <span>Malaysia ↔ China & Hong Kong Trade Specialists</span>
+                </div>
+                <h1 class="hero-title" data-en="Connecting Malaysia to the World" data-zh="连接马来西亚与世界">
+                    Connecting Malaysia to the World
+                </h1>
+                <p class="hero-subtitle" data-en="Premier logistics solutions for Malaysia-China & Hong Kong machinery & electronics trade. Your trusted partner in international commerce." data-zh="马来西亚-中国及香港机械电子贸易的首选物流解决方案。您值得信赖的国际贸易伙伴。">
+                    Premier logistics solutions for Malaysia-China & Hong Kong machinery & electronics trade. Your trusted partner in international commerce.
+                </p>
+
+                <!-- Shipping Process Timeline -->
+                <div class="shipping-timeline">
+                    <h3 data-en="Our Shipping Process" data-zh="我们的运输流程">Our Shipping Process</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-step active">
+                            <div class="step-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Collection" data-zh="收集">Collection</h4>
+                                <p data-en="Malaysia" data-zh="马来西亚">Malaysia</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Transit" data-zh="运输">Transit</h4>
+                                <p data-en="Sea/Air" data-zh="海运/空运">Sea/Air</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Customs" data-zh="清关">Customs</h4>
+                                <p data-en="Clearance" data-zh="清关">Clearance</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Delivery" data-zh="交付">Delivery</h4>
+                                <p data-en="China" data-zh="中国">China</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="cta-primary" onclick="scrollToContact()" data-en="GET QUOTE" data-zh="获取报价">
+                        <i class="fas fa-calculator"></i>
+                        GET QUOTE
+                    </button>
+                    <button class="cta-secondary" onclick="scrollToMachinery()" data-en="View Equipment" data-zh="查看设备">
+                        <i class="fas fa-cogs"></i>
+                        View Equipment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side - Visual Elements -->
+            <div class="hero-right">
+                <div class="trade-visual">
+                    <div class="country-node malaysia">
+                        <div class="country-flag">🇲🇾</div>
+                        <div class="country-info">
+                            <h4 data-en="Malaysia" data-zh="马来西亚">Malaysia</h4>
+                            <p data-en="Export Hub" data-zh="出口中心">Export Hub</p>
+                        </div>
+                        <div class="trade-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label" data-en="Shipments" data-zh="货运">Shipments</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trade-route">
+                        <div class="route-line">
+                            <div class="route-animation"></div>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-plane"></i>
+                            <span data-en="2-5 Days" data-zh="2-5天">2-5 Days</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-ship"></i>
+                            <span data-en="7-14 Days" data-zh="7-14天">7-14 Days</span>
+                        </div>
+                    </div>
+
+                    <div class="country-node china">
+                        <div class="country-flag">🇨🇳</div>
+                        <div class="country-info">
+                            <h4 data-en="China" data-zh="中国">China</h4>
+                            <p data-en="Import Destination" data-zh="进口目的地">Import Destination</p>
+                        </div>
+                        <div class="trade-stats">
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label" data-en="On-Time" data-zh="准时">On-Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-metrics">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="metric-info">
+                            <h4>1+</h4>
+                            <p data-en="Years Experience" data-zh="年经验">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="metric-info">
+                            <h4>200+</h4>
+                            <p data-en="Trusted Partners" data-zh="可信赖的合作伙伴">Trusted Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Services" data-zh="我们的服务">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 data-en="Sea Freight" data-zh="海运">Sea Freight</h3>
+                    <p data-en="Cost-effective ocean shipping solutions for bulk machinery and electronics between Malaysia, China & Hong Kong." data-zh="马来西亚、中国及香港之间大宗机械电子产品的经济海运解决方案。">
+                        Cost-effective ocean shipping solutions for bulk machinery and electronics between Malaysia, China & Hong Kong.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 data-en="Air Freight" data-zh="空运">Air Freight</h3>
+                    <p data-en="Express air cargo services for time-sensitive electronics and high-value machinery components." data-zh="时效性电子产品和高价值机械部件的快速空运服务。">
+                        Express air cargo services for time-sensitive electronics and high-value machinery components.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3 data-en="Customs Clearance" data-zh="清关服务">Customs Clearance</h3>
+                    <p data-en="Expert handling of import/export documentation and customs procedures for smooth trade operations." data-zh="专业处理进出口文件和海关程序，确保贸易操作顺畅。">
+                        Expert handling of import/export documentation and customs procedures for smooth trade operations.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 data-en="Warehousing" data-zh="仓储服务">Warehousing</h3>
+                    <p data-en="Secure storage facilities with inventory management for machinery parts and electronic components." data-zh="为机械零件和电子元件提供安全的存储设施和库存管理。">
+                        Secure storage facilities with inventory management for machinery parts and electronic components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="machinery" class="equipment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Equipment We Handle</h2>
+                <p class="section-subtitle">
+                    Specialized handling for various types of machinery and electronics
+                </p>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Semiconductor Equipment</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">50kg - 5,000kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">Clean room packaging</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">3-5 days (Air)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Temperature Controlled</span>
+                            <span class="feature-badge">Anti-Static</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Manufacturing Equipment</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">500kg - 50,000kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">Heavy lift cranes</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">10-14 days (Sea)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Oversized Cargo</span>
+                            <span class="feature-badge">Secured Transport</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Electronics & IT Equipment</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">1kg - 500kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">ESD protection</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">2-3 days (Express)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Express Delivery</span>
+                            <span class="feature-badge">Insurance Included</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Precision Instruments</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">10kg - 2,000kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">Vibration-free transport</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">4-6 days (Air)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Climate Controlled</span>
+                            <span class="feature-badge">Calibration Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-en="Why Choose Monde International?" data-zh="为什么选择世界国际？">Why Choose Monde International?</h2>
+                    <p data-en="With over a decade of experience in Malaysia-China & Hong Kong trade, we understand the unique challenges of cross-border logistics in the machinery and electronics sectors." data-zh="凭借十多年的马中港贸易经验，我们深知机械电子行业跨境物流的独特挑战。">
+                        With over a decade of experience in Malaysia-China & Hong Kong trade, we understand the unique challenges of cross-border logistics in the machinery and electronics sectors.
+                    </p>
+                    <ul class="about-features">
+                        <li data-en="Specialized in high-tech equipment transport" data-zh="专业高科技设备运输">
+                            <i class="fas fa-check"></i> Specialized in high-tech equipment transport
+                        </li>
+                        <li data-en="Bilingual support team (English/Chinese)" data-zh="双语支持团队（英语/中文）">
+                            <i class="fas fa-check"></i> Bilingual support team (English/Chinese)
+                        </li>
+                        <li data-en="Direct partnerships with major Chinese & Hong Kong ports" data-zh="与中国及香港主要港口直接合作">
+                            <i class="fas fa-check"></i> Direct partnerships with major Chinese & Hong Kong ports
+                        </li>
+                        <li data-en="24/7 shipment tracking and updates" data-zh="24/7货物跟踪和更新">
+                            <i class="fas fa-check"></i> 24/7 shipment tracking and updates
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p data-en="Successful Shipments" data-zh="成功运输">Successful Shipments</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p data-en="On-Time Delivery" data-zh="准时交付">On-Time Delivery</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1+</h3>
+                        <p data-en="Years Experience" data-zh="年经验">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Get Your Quote Today" data-zh="立即获取报价">Get Your Quote Today</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-en="Contact Information" data-zh="联系信息">Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong data-en="Phone" data-zh="电话">Phone</strong>
+                            <p>+60 3-2785 6800</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong data-en="Office Address" data-zh="办公地址">Office Address</strong>
+                            <p>Level 23-1 Premier Suite One Mont Kiara<br>No. 1 Jalan Kiara, Mont Kiara<br>50480 Kuala Lumpur</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>+60 3-2785 6800</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong data-en="Email" data-zh="邮箱">Email</strong>
+                            <p>info@mondeinternational.com.my</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name" data-en="Full Name" data-zh="姓名">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" data-en="Email Address" data-zh="邮箱地址">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" data-en="Your Message" data-zh="您的信息">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn" data-en="Send Message" data-zh="发送信息">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Monde International Sdn Bhd" data-zh="世界国际有限公司">Monde International Sdn Bhd</h3>
+                    <p data-en="Level 23-1 Premier Suite One Mont Kiara, No. 1 Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur" data-zh="马来西亚吉隆坡满家乐甲必丹基亚拉路1号满家乐一号23楼1室 50480">
+                        Level 23-1 Premier Suite One Mont Kiara<br>No. 1 Jalan Kiara, Mont Kiara<br>50480 Kuala Lumpur
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-zh="关注我们">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2024 Monde International Sdn Bhd. All rights reserved." data-zh="© 2024 世界国际有限公司。保留所有权利。" id="footer-copyright">
+                    © <span id="current-year">2024</span> Monde International Sdn Bhd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="form-handler.js?v=20250730002"></script> html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monde International Sdn Bhd - Connecting Malaysia to the World</title>
+    <link rel="stylesheet" href="style.css?v=20250730002">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Enhanced Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Company Logo & Branding -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-globe-asia"></i>
+                </div>
+                <div class="logo-text">
+                    <h2>Monde International</h2>
+                    <span>Sdn Bhd</span>
+                </div>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-nav-toggle" onclick="toggleMobileNav()">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Menu (Hidden on Mobile) -->
+            <nav class="nav-tabs">
+                <a href="#home" class="nav-tab">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#services" class="nav-tab">
+                    <i class="fas fa-shipping-fast"></i>
+                    <span>Services</span>
+                </a>
+                <a href="#machinery" class="nav-tab active">
+                    <i class="fas fa-cogs"></i>
+                    <span>Equipment</span>
+                </a>
+                <a href="#about" class="nav-tab">
+                    <i class="fas fa-info-circle"></i>
+                    <span>About</span>
+                </a>
+                <a href="#contact" class="nav-tab">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-split-container">
+            <!-- Left Side - Content -->
+            <div class="hero-left">
+                <div class="hero-badge" data-en="Malaysia ↔ China & Hong Kong Trade Specialists" data-zh="马中港贸易专家">
+                    <i class="fas fa-globe-asia"></i>
+                    <span>Malaysia ↔ China & Hong Kong Trade Specialists</span>
+                </div>
+                <h1 class="hero-title" data-en="Connecting Malaysia to the World" data-zh="连接马来西亚与世界">
+                    Connecting Malaysia to the World
+                </h1>
+                <p class="hero-subtitle" data-en="Premier logistics solutions for Malaysia-China & Hong Kong machinery & electronics trade. Your trusted partner in international commerce." data-zh="马来西亚-中国及香港机械电子贸易的首选物流解决方案。您值得信赖的国际贸易伙伴。">
+                    Premier logistics solutions for Malaysia-China & Hong Kong machinery & electronics trade. Your trusted partner in international commerce.
+                </p>
+
+                <!-- Shipping Process Timeline -->
+                <div class="shipping-timeline">
+                    <h3 data-en="Our Shipping Process" data-zh="我们的运输流程">Our Shipping Process</h3>
+                    <div class="timeline-container">
+                        <div class="timeline-step active">
+                            <div class="step-icon">
+                                <i class="fas fa-warehouse"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Collection" data-zh="收集">Collection</h4>
+                                <p data-en="Malaysia" data-zh="马来西亚">Malaysia</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-ship"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Transit" data-zh="运输">Transit</h4>
+                                <p data-en="Sea/Air" data-zh="海运/空运">Sea/Air</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-file-invoice"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Customs" data-zh="清关">Customs</h4>
+                                <p data-en="Clearance" data-zh="清关">Clearance</p>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                        <div class="timeline-step">
+                            <div class="step-icon">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <div class="step-content">
+                                <h4 data-en="Delivery" data-zh="交付">Delivery</h4>
+                                <p data-en="China" data-zh="中国">China</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <button class="cta-primary" onclick="scrollToContact()" data-en="GET QUOTE" data-zh="获取报价">
+                        <i class="fas fa-calculator"></i>
+                        GET QUOTE
+                    </button>
+                    <button class="cta-secondary" onclick="scrollToMachinery()" data-en="View Equipment" data-zh="查看设备">
+                        <i class="fas fa-cogs"></i>
+                        View Equipment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right Side - Visual Elements -->
+            <div class="hero-right">
+                <div class="trade-visual">
+                    <div class="country-node malaysia">
+                        <div class="country-flag">🇲🇾</div>
+                        <div class="country-info">
+                            <h4 data-en="Malaysia" data-zh="马来西亚">Malaysia</h4>
+                            <p data-en="Export Hub" data-zh="出口中心">Export Hub</p>
+                        </div>
+                        <div class="trade-stats">
+                            <div class="stat">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label" data-en="Shipments" data-zh="货运">Shipments</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trade-route">
+                        <div class="route-line">
+                            <div class="route-animation"></div>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-plane"></i>
+                            <span data-en="2-5 Days" data-zh="2-5天">2-5 Days</span>
+                        </div>
+                        <div class="route-info">
+                            <i class="fas fa-ship"></i>
+                            <span data-en="7-14 Days" data-zh="7-14天">7-14 Days</span>
+                        </div>
+                    </div>
+
+                    <div class="country-node china">
+                        <div class="country-flag">🇨🇳</div>
+                        <div class="country-info">
+                            <h4 data-en="China" data-zh="中国">China</h4>
+                            <p data-en="Import Destination" data-zh="进口目的地">Import Destination</p>
+                        </div>
+                        <div class="trade-stats">
+                            <div class="stat">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label" data-en="On-Time" data-zh="准时">On-Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-metrics">
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <div class="metric-info">
+                            <h4>1+</h4>
+                            <p data-en="Years Experience" data-zh="年经验">Years Experience</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="metric-info">
+                            <h4>200+</h4>
+                            <p data-en="Trusted Partners" data-zh="可信赖的合作伙伴">Trusted Partners</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-en="Our Services" data-zh="我们的服务">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-ship"></i>
+                    </div>
+                    <h3 data-en="Sea Freight" data-zh="海运">Sea Freight</h3>
+                    <p data-en="Cost-effective ocean shipping solutions for bulk machinery and electronics between Malaysia, China & Hong Kong." data-zh="马来西亚、中国及香港之间大宗机械电子产品的经济海运解决方案。">
+                        Cost-effective ocean shipping solutions for bulk machinery and electronics between Malaysia, China & Hong Kong.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3 data-en="Air Freight" data-zh="空运">Air Freight</h3>
+                    <p data-en="Express air cargo services for time-sensitive electronics and high-value machinery components." data-zh="时效性电子产品和高价值机械部件的快速空运服务。">
+                        Express air cargo services for time-sensitive electronics and high-value machinery components.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice"></i>
+                    </div>
+                    <h3 data-en="Customs Clearance" data-zh="清关服务">Customs Clearance</h3>
+                    <p data-en="Expert handling of import/export documentation and customs procedures for smooth trade operations." data-zh="专业处理进出口文件和海关程序，确保贸易操作顺畅。">
+                        Expert handling of import/export documentation and customs procedures for smooth trade operations.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-warehouse"></i>
+                    </div>
+                    <h3 data-en="Warehousing" data-zh="仓储服务">Warehousing</h3>
+                    <p data-en="Secure storage facilities with inventory management for machinery parts and electronic components." data-zh="为机械零件和电子元件提供安全的存储设施和库存管理。">
+                        Secure storage facilities with inventory management for machinery parts and electronic components.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Section -->
+    <section id="machinery" class="equipment-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Equipment We Handle</h2>
+                <p class="section-subtitle">
+                    Specialized handling for various types of machinery and electronics
+                </p>
+            </div>
+
+            <div class="equipment-grid">
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Semiconductor Equipment</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">50kg - 5,000kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">Clean room packaging</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">3-5 days (Air)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Temperature Controlled</span>
+                            <span class="feature-badge">Anti-Static</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-industry"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Manufacturing Equipment</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">500kg - 50,000kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">Heavy lift cranes</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">10-14 days (Sea)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Oversized Cargo</span>
+                            <span class="feature-badge">Secured Transport</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Electronics & IT Equipment</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">1kg - 500kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">ESD protection</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">2-3 days (Express)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Express Delivery</span>
+                            <span class="feature-badge">Insurance Included</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="equipment-card">
+                    <div class="equipment-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="equipment-content">
+                        <h3>Precision Instruments</h3>
+                        <div class="equipment-specs">
+                            <div class="spec-row">
+                                <span class="spec-label">Weight Range:</span>
+                                <span class="spec-value">10kg - 2,000kg</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Special Handling:</span>
+                                <span class="spec-value">Vibration-free transport</span>
+                            </div>
+                            <div class="spec-row">
+                                <span class="spec-label">Transit Time:</span>
+                                <span class="spec-value">4-6 days (Air)</span>
+                            </div>
+                        </div>
+                        <div class="equipment-features">
+                            <span class="feature-badge">Climate Controlled</span>
+                            <span class="feature-badge">Calibration Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 data-en="Why Choose Monde International?" data-zh="为什么选择世界国际？">Why Choose Monde International?</h2>
+                    <p data-en="With over a decade of experience in Malaysia-China & Hong Kong trade, we understand the unique challenges of cross-border logistics in the machinery and electronics sectors." data-zh="凭借十多年的马中港贸易经验，我们深知机械电子行业跨境物流的独特挑战。">
+                        With over a decade of experience in Malaysia-China & Hong Kong trade, we understand the unique challenges of cross-border logistics in the machinery and electronics sectors.
+                    </p>
+                    <ul class="about-features">
+                        <li data-en="Specialized in high-tech equipment transport" data-zh="专业高科技设备运输">
+                            <i class="fas fa-check"></i> Specialized in high-tech equipment transport
+                        </li>
+                        <li data-en="Bilingual support team (English/Chinese)" data-zh="双语支持团队（英语/中文）">
+                            <i class="fas fa-check"></i> Bilingual support team (English/Chinese)
+                        </li>
+                        <li data-en="Direct partnerships with major Chinese & Hong Kong ports" data-zh="与中国及香港主要港口直接合作">
+                            <i class="fas fa-check"></i> Direct partnerships with major Chinese & Hong Kong ports
+                        </li>
+                        <li data-en="24/7 shipment tracking and updates" data-zh="24/7货物跟踪和更新">
+                            <i class="fas fa-check"></i> 24/7 shipment tracking and updates
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h3>500+</h3>
+                        <p data-en="Successful Shipments" data-zh="成功运输">Successful Shipments</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>98%</h3>
+                        <p data-en="On-Time Delivery" data-zh="准时交付">On-Time Delivery</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1+</h3>
+                        <p data-en="Years Experience" data-zh="年经验">Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-en="Get Your Quote Today" data-zh="立即获取报价">Get Your Quote Today</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 data-en="Contact Information" data-zh="联系信息">Contact Information</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <strong data-en="Phone" data-zh="电话">Phone</strong>
+                            <p>+60 3-2785 6800</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <strong data-en="Office Address" data-zh="办公地址">Office Address</strong>
+                            <p>Level 23-1 Premier Suite One Mont Kiara<br>No. 1 Jalan Kiara, Mont Kiara<br>50480 Kuala Lumpur</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <p>+60 3-2785 6800</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <strong data-en="Email" data-zh="邮箱">Email</strong>
+                            <p>info@mondeinternational.com.my</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name" data-en="Full Name" data-zh="姓名">Full Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email" data-en="Email Address" data-zh="邮箱地址">Email Address</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <label for="message" data-en="Your Message" data-zh="您的信息">Your Message</label>
+                    </div>
+                    <button type="submit" class="submit-btn" data-en="Send Message" data-zh="发送信息">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 data-en="Monde International Sdn Bhd" data-zh="世界国际有限公司">Monde International Sdn Bhd</h3>
+                    <p data-en="Level 23-1 Premier Suite One Mont Kiara, No. 1 Jalan Kiara, Mont Kiara, 50480 Kuala Lumpur" data-zh="马来西亚吉隆坡满家乐甲必丹基亚拉路1号满家乐一号23楼1室 50480">
+                        Level 23-1 Premier Suite One Mont Kiara<br>No. 1 Jalan Kiara, Mont Kiara<br>50480 Kuala Lumpur
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-en="Follow Us" data-zh="关注我们">Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-en="© 2024 Monde International Sdn Bhd. All rights reserved." data-zh="© 2024 世界国际有限公司。保留所有权利。" id="footer-copyright">
+                    © <span id="current-year">2024</span> Monde International Sdn Bhd. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="form-handler.js?v=20250730002"></script>
+</body>
+</html>
