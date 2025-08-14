@@ -22,25 +22,23 @@ A professional logistics website for Malaysia-China & Hong Kong trade specialist
 
 ## Deployment
 
-### Deploy to Vercel
+### Quick Deploy to Vercel
 
-1. **Install Vercel CLI** (if not already installed):
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/WeBot-IT-Services/monde-international)
+
+### Manual Deploy to Vercel
+
+1. **Via Vercel Dashboard**:
+   - Go to [vercel.com](https://vercel.com)
+   - Sign in with GitHub
+   - Click "New Project"
+   - Import `WeBot-IT-Services/monde-international`
+   - Click "Deploy"
+
+2. **Via Vercel CLI**:
    ```bash
    npm install -g vercel
-   ```
-
-2. **Login to Vercel**:
-   ```bash
    vercel login
-   ```
-
-3. **Deploy from this directory**:
-   ```bash
-   vercel
-   ```
-
-4. **For production deployment**:
-   ```bash
    vercel --prod
    ```
 
